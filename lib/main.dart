@@ -1,3 +1,4 @@
+import 'package:course_flutter/demos/demos1/demos_home_view.dart';
 import 'package:course_flutter/stateful_pageview_textfield/stateful_widget.dart';
 import 'package:course_flutter/stateful_pageview_textfield/stateless_widget.dart';
 import 'package:course_flutter/stateful_pageview_textfield/text_field_widget.dart';
@@ -14,15 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        appBarTheme: const AppBarTheme(
-          centerTitle: true,
-          backgroundColor: Colors.transparent,
-        )
-      ),
-         home: StatefulExample()
-      );
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData.light(),
+        home: DemosHomeView());
   }
 }
